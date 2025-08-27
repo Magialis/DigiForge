@@ -1,0 +1,93 @@
+@use 'variaveis';
+
+.featured {
+    width: calc(100% - 160px);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+
+    &__content {
+        margin-top: 80px;
+
+        &__title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 64px;
+            color: variaveis.$mainText;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                font-size: 44px;
+            }
+
+            &--highlight {
+                color: variaveis.$textHighlight;
+            }
+        }
+
+        &__text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: variaveis.$mainText;
+            text-align: center;
+            margin-bottom: 64px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+            
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+
+        &__item {
+            &__title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 32px;
+                color: variaveis.$darkText;
+
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                }
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 24px;
+                    margin-top: 16px;
+                    margin-bottom: 0;
+                    color: variaveis.$darkText;
+
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                    }
+                }
+
+                &__decoration {
+                    display: inline-block;
+                    width: 196px;
+                    height: 1px;
+                    background-color: variaveis.$darkText;
+                    margin-top: 0;
+                    margin-bottom: 32px;
+
+                    @media (max-width: 768px) {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+
+        &__image {
+            width: 100%;
+        }
+    }
+}

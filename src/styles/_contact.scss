@@ -1,0 +1,157 @@
+@use 'variaveis';
+
+.contact{
+    background-color: variaveis.$backgroundHighlight;
+
+    &__content {
+        width: calc(100% - 160px);
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 80px;
+        padding: 48px 0;
+
+        &__newsletter {
+            &__logo {
+                height: 34px;
+            }
+
+            &__text {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                color: variaveis.$mainText;
+                text-align: start;
+                margin-top: 16px;
+
+                @media (min-width: 768px) and (max-width: 1199px) {
+                    font-size: 12px;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 10px;
+                }
+            }
+
+            &__form {
+                display: flex;
+
+                &__input {
+                    width: 226px;
+                    padding: 16px 0 16px 16px;
+                    background-color: transparent;
+                    border: variaveis.$textHighlight solid 1px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: variaveis.$mainText;
+
+                    @media (min-width: 768px) and (max-width: 1199px) {
+                        width: 110px;
+                        font-size: 10px;
+                    }
+
+                    @media (max-width: 768px) {
+                        width: 120px;
+                        font-size: 10px;
+                    }
+                }
+
+                &__button {
+                    padding: 16px;
+                    background-color: variaveis.$textHighlight;
+                    border: variaveis.$textHighlight solid 1px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: variaveis.$mainText;
+
+                    @media (min-width: 768px) and (max-width: 1199px) {
+                        font-size: 10px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            &__socials {
+                display: flex;
+                color: variaveis.$textHighlight;
+                height: 22px;
+                margin-top: 16px;
+
+                &--middle {
+                    margin: 0 16px;
+                }
+            }
+        }
+
+        &__divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__decoration {
+                height: 176px;
+                width: 1px;
+                background-color: variaveis.$textHighlight;
+            }
+
+            &--small {
+                display: none;
+            }
+        }
+
+        &__links,
+        &__services,
+        &__adress {
+            &__title {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                color: variaveis.$textHighlight;
+                text-align: start;
+
+                @media (min-width: 768px) and (max-width: 1199px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        
+            &__a,
+            &__p {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+
+                a,
+                p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: variaveis.$mainText;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+
+                    @media (min-width: 768px) and (max-width: 1199px) {
+                        font-size: 10px;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        &__adress {
+            text-align: center;
+        }
+    }
+}

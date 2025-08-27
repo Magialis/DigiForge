@@ -1,0 +1,64 @@
+@use 'variaveis';
+
+.whyus {
+    &__content {
+        background-color: variaveis.$backgroundHighlight;
+
+        &__container {
+            width: calc(100% - 160px);
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+        
+        &__title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 64px;
+            color: variaveis.$mainText;
+            margin-top: 44px;
+
+            @media (max-width: 768px) {
+                font-size: 44px;
+            }
+
+            &--highlight {
+                color: variaveis.$textHighlight;
+            }
+        }
+        
+        &__text {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: variaveis.$mainText;
+            margin-top: 16px;
+            margin-bottom: 44px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+
+        &__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__left,
+            &__right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 24px;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

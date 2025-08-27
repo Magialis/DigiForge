@@ -1,0 +1,43 @@
+@use 'variaveis';
+@use 'header';
+@use 'hero';
+@use 'services';
+@use 'whyus';
+@use 'featured';
+@use 'inovate';
+@use 'customer';
+@use 'contact';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variaveis.$backgroundColor;
+}
+
+.background {
+    background: url('../images/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.footer {
+    &__content {
+        &__text{
+            padding: 16px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            color: variaveis.$mainText;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+    }
+}

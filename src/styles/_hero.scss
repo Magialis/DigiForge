@@ -1,0 +1,120 @@
+@use 'variaveis';
+
+.hero {
+    &__content {
+        position: relative;
+        color: variaveis.$mainText;
+        text-align: center;
+        height: 70vh;
+        
+        &__container {
+            width: calc(100% - 160px);
+            margin-left: 80px;
+            margin-right: 80px;
+            position: relative;
+        }
+
+        &__text{
+            margin: 120px 0;
+            
+            @media (max-width: 768px) {
+                margin-top: 200px;
+            }
+
+            &__title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 36px;
+                color: variaveis.$mainText;
+                text-transform: uppercase;
+                text-align: start;
+
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                }
+
+                &--highlight {
+                    font-weight: 600;
+                    font-size: 56px;
+
+                    @media (max-width: 768px) {
+                        font-size: 42px;
+                    }
+                }
+            }
+
+            &__p {
+                max-width: 486px;
+                margin-top: 8px;
+                margin-bottom: 24px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: variaveis.$mainText;
+                text-align: start;
+
+                @media (max-width: 768px) {
+                    font-size: 10px;
+                }
+            }
+
+            &__button {
+                display: block;
+                text-align: left;
+                max-width: fit-content;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: variaveis.$mainText;
+                text-decoration: none;
+                padding: 12px 16px;
+                background-color: transparent;
+                border: variaveis.$mainText solid 2px;
+                border-radius: 4px;
+            }
+        }
+
+        &__image {
+            position: absolute;
+            right: -80px;
+            bottom: calc(100% - 60vh);
+            width: 566px;
+
+            @media (max-width: 768px) {
+                right: 0;
+                top: 0;
+            }
+        }
+
+        &__icons {
+            position: absolute;
+            bottom: calc(100% - 70vh);
+            height: 80px;
+            width: 100%;
+            background-color: variaveis.$backgroundHighlight;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 80px;
+
+            
+            &__item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                &__image {
+                    width: 100px;
+                }
+    
+                &__decoration {
+                    display: inline-block;
+                    width: 2px;
+                    height: 48px;
+                    background-color: #181818;
+                    margin: 0 150px;
+                }
+            }
+        }
+    }
+}
