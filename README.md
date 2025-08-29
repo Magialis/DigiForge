@@ -9,7 +9,7 @@ Projeto de uma landing page responsiva com o objetivo de mostrar habilidades em 
 * Executar npm run gulp para compilar o sass
 
 
-## 🛠️ Construído com
+### 🛠️ Construído com
 
 * HTML
 * CSS
@@ -21,6 +21,7 @@ Projeto de uma landing page responsiva com o objetivo de mostrar habilidades em 
 
 ### ⬆️ Updates
 
+28/08/25
 * Melhoria na responsividade
 * Melhoria na manutenção do código: criação de mixins e classes específicas para as fontes do site, sem necessidade de repetir o código
 * Adição de animações para melhor experiência do usuário
