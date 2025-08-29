@@ -3,13 +3,13 @@
 Projeto de uma landing page responsiva com o objetivo de mostrar habilidades em linguaguens e ferramentas de front-end
 
 
-### ⬇️ Instalação
+## ⬇️ Instalação
 
 * Executar npm install na pasta do projeto
 * Executar npm run gulp para compilar o sass
 
 
-### 🛠️ Construído com
+## 🛠️ Construído com
 
 * HTML
 * CSS
@@ -19,7 +19,7 @@ Projeto de uma landing page responsiva com o objetivo de mostrar habilidades em 
 * Gulp
 
 
-### ⬆️ Updates
+## ⬆️ Updates
 
 28/08/25
 * Melhoria na responsividade
