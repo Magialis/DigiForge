@@ -6,19 +6,19 @@
     margin-right: 80px;
     margin-top: 80px;
 
+    @media (max-width: 768px) {
+        width: calc(100% - 80px);
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
     &__content {
         margin-top: 80px;
 
         &__title {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            font-size: 64px;
+            font-family: variaveis.$mainFont;
             color: variaveis.$mainText;
             text-align: center;
-
-            @media (max-width: 768px) {
-                font-size: 44px;
-            }
 
             &--highlight {
                 color: variaveis.$textHighlight;
@@ -26,68 +26,80 @@
         }
 
         &__text {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
+            font-family: variaveis.$mainFont;
             color: variaveis.$mainText;
             text-align: center;
             margin-bottom: 64px;
+        }
 
-            @media (max-width: 768px) {
-                font-size: 14px;
-            }
-            
-            @media (max-width: 768px) {
-                font-size: 12px;
+        &__tabs {
+            &__item {
+                &__title {
+                    font-family: variaveis.$mainFont;
+                    color: variaveis.$darkText;
+
+                    &--is-active {
+                        color: variaveis.$textHighlight;
+                    }
+                }
+        
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    &__button {
+                        display: flex;
+                        align-items: flex-start;
+                        font-family: variaveis.$mainFont;
+                        font-weight: 400;
+                        font-size: 24px;
+                        margin-top: 16px;
+                        margin-bottom: 0;
+                        color: variaveis.$darkText;
+                        background-color: transparent;
+                        border: none;
+                        box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.2);
+                        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+                        &:hover {
+                            color: variaveis.$mainText;
+                            box-shadow: inset 196px 0 0 0 rgba(255, 255, 255, 0.2);
+                        }
+        
+                        @media (max-width: 768px) {
+                            font-size: 18px;
+                        }
+                    }
+        
+                    &__decoration {
+                        display: inline-block;
+                        width: 196px;
+                        height: 1px;
+                        background-color: variaveis.$darkText;
+                        margin-top: 0;
+                        margin-bottom: 32px;
+        
+                        @media (max-width: 768px) {
+                            width: 120px;
+                        }
+                    }
+                }
             }
         }
 
         &__item {
-            &__title {
-                font-family: 'Poppins', sans-serif;
-                font-weight: 500;
-                font-size: 32px;
-                color: variaveis.$darkText;
-
-                @media (max-width: 768px) {
-                    font-size: 24px;
-                }
-            }
-
-            &__text {
-                display: flex;
-                flex-direction: column;
+            &__image {
+                display: none;
                 
-                p {
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 400;
-                    font-size: 24px;
-                    margin-top: 16px;
-                    margin-bottom: 0;
-                    color: variaveis.$darkText;
-
-                    @media (max-width: 768px) {
-                        font-size: 18px;
-                    }
+                img {
+                    width: 100%;
                 }
-
-                &__decoration {
-                    display: inline-block;
-                    width: 196px;
-                    height: 1px;
-                    background-color: variaveis.$darkText;
-                    margin-top: 0;
-                    margin-bottom: 32px;
-
-                    @media (max-width: 768px) {
-                        width: 120px;
-                    }
+                
+                &--is-active {
+                    display: flex;
+                    justify-content: end;
                 }
             }
-        }
-
-        &__image {
-            width: 100%;
         }
     }
 }

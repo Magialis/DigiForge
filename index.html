@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./build/styles/main.css">
     <title>DigiForge</title>
 </head>
+
 <body>
     <div class="background">
         <header class="header">
@@ -18,16 +23,22 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <a class="header__content__button" href="#navigation-menu" id="navigation-button">
-                            <span class="header__content__button__line--big"></span>
-                            <span class="header__content__button__line--small"></span>
+                            <div class="header__content__button__line header__content__button__line--is-active"
+                                id="hamburger-lines">
+                                <span class="header__content__button__line--big"></span>
+                                <span class="header__content__button__line--small"></span>
+                            </div>
+                            <span class="close-icon" id="close-icon">X</span>
                         </a>
                     </div>
-                    <div class="header__content__logo col-md-4 col-sm-4">
+                    <div class="header__content__logo col-md-4 col-sm-12">
                         <img src="./src/images/logo.png" alt="">
                     </div>
-                    <div class="header__content__link col-md-4 col-sm-4">
-                        <a class="header__content__link__a" href="">Get an Estimate</a>
-                        <span class="header__content__link__a--underline"></span>
+                    <div class="header__content__link col-md-4 col-sm-2">
+                        <button class="header__content__link__button" type="button">
+                            <a class="header__content__link__a text--medium" href="">Get an Estimate</a>
+                            <span class="header__content__link__a--underline"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -35,125 +46,165 @@
                 <ul class="header__content__navbar__items">
                     <li class="header__content__navbar__items__item">
                         <a class="header__content__navbar__items__item__link" href="">about us</a>
+                        <span class="header__content__navbar__items__item__link__decoration"></span>
                     </li>
                     <li class="header__content__navbar__items__item">
                         <a class="header__content__navbar__items__item__link" href="">services</a>
+                        <span class="header__content__navbar__items__item__link__decoration"></span>
                     </li>
                     <li class="header__content__navbar__items__item">
                         <a class="header__content__navbar__items__item__link" href="">our work</a>
+                        <span class="header__content__navbar__items__item__link__decoration"></span>
                     </li>
                     <li class="header__content__navbar__items__item">
                         <a class="header__content__navbar__items__item__link" href="">careers</a>
+                        <span class="header__content__navbar__items__item__link__decoration"></span>
                     </li>
                     <li class="header__content__navbar__items__item">
                         <a class="header__content__navbar__items__item__link" href="">blogs</a>
+                        <span class="header__content__navbar__items__item__link__decoration"></span>
                 </ul>
             </nav>
         </header>
-    
+
         <section class="hero">
             <div class="hero__content">
                 <div class="row hero__content__container">
-                    <div class="hero__content__text col-md-6 col-sm-12">
-                        <h2 class="hero__content__text__title">
-                            inovating sustainable 
+                    <div class="hero__content__text col-lg-6 col-md-12 col-sm-12">
+                        <h2 class="hero__content__text__title title--medium">
+                            inovating sustainable
                             <br>
                             <span class="hero__content__text__title--highlight">software solutions</span>
-                            <br> 
+                            <br>
                             for enterprises!
                         </h2>
-                        <p class="hero__content__text__p">We welcome Startups, Growth Companies, and Enterprises to connect with us to bring their ideas to life.</p>
-                        <a class="hero__content__text__button" href="">
-                            Let's Inovate! 
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+                        <p class="hero__content__text__p text">We welcome Startups, Growth Companies, and Enterprises to
+                            connect with us to bring their ideas to life.</p>
+                        <button class="hero__content__text__button button" type="button">
+                            <a href="">
+                                Let's Inovate!
+                                <i class="bi bi-arrow-right button__arrow"></i>
+                            </a>
+                        </button>
                     </div>
-                    <div class="col-md-6 col-sm-12">
-                        <img class="hero__content__image img-fluid" src="./src/images/hero-image.png" alt="">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img class="hero__content__image" src="./src/images/hero-image.png" alt="">
                     </div>
                 </div>
                 <div class="hero__content__icons">
                     <div class="hero__content__icons__item">
                         <img class="hero__content__icons__item__image" src="./src/images/logos/fiverr-logo.png" alt="">
-                        <span class="hero__content__icons__item__decoration"></span>
+                        <span
+                            class="hero__content__icons__item__decoration hero__content__icons__item__decoration--small"></span>
                     </div>
                     <div class="hero__content__icons__item">
                         <img class="hero__content__icons__item__image" src="./src/images/logos/intuit-logo.png" alt="">
-                        <span class="hero__content__icons__item__decoration"></span>
+                        <span
+                            class="hero__content__icons__item__decoration hero__content__icons__item__decoration--small"></span>
                     </div>
                     <div class="hero__content__icons__item">
                         <img class="hero__content__icons__item__image" src="./src/images/logos/sony-logo.png" alt="">
-                        <span class="hero__content__icons__item__decoration"></span>
+                        <span
+                            class="hero__content__icons__item__decoration hero__content__icons__item__decoration--small"></span>
                     </div>
                     <div class="hero__content__icons__item">
                         <img class="hero__content__icons__item__image" src="./src/images/logos/motul-logo.png" alt="">
-                        <span class="hero__content__icons__item__decoration"></span>
+                        <span
+                            class="hero__content__icons__item__decoration hero__content__icons__item__decoration--small"></span>
                     </div>
                     <div class="hero__content__icons__item">
-                        <img class="hero__content__icons__item__image" src="./src/images/logos/click-up-logo.png" alt="">
+                        <img class="hero__content__icons__item__image" src="./src/images/logos/click-up-logo.png"
+                            alt="">
                     </div>
                 </div>
             </div>
         </section>
 
+        <div class="button__top">
+            <button type="button" class="btn-top" id="btn-top">
+                <i class="bi bi-arrow-up"></i>
+            </button>
+        </div>
+
         <section class="services">
             <div class="services__content">
-                <h2 class="services__content__title">
-                    Our 
+                <h2 class="services__content__title title--big">
+                    Our
                     <span class="services__content__title--highlight">Services</span>
                 </h2>
-                <p class="services__content__subtitle">We Offer Full Stack Development For Digital Innovation</p>
+                <p class="services__content__text text">We Offer Full Stack Development For Digital Innovation</p>
                 <div class="services__content__cards">
                     <div class="services__content__cards__container row">
-                        <div class="services__content__cards__item--highlight col-md-4 col-sm-12 p-4">
-                            <div class="services__content__cards__item__icons" >
+                        <div class="services__content__cards__item col-md-4 col-sm-12 p-4">
+                            <div class="services__content__cards__item__icons">
                                 <i class="bi bi-hash"></i>
-                                <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow--highlight"></i>
+                                <a href="">
+                                    <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                </a>
                             </div>
-                            <h3 class="services__content__cards__item__title">UI/UX Design</h3>
-                            <p class="services__content__cards__item__text">Design experiences, not just interfaces, Our UI/UX service brings your digital products to life!</p>
+                            <h3 class="services__content__cards__item__title text--big">UI/UX Design</h3>
+                            <p class="services__content__cards__item__text text">Design experiences, not just
+                                interfaces, Our UI/UX service brings your digital products to life!</p>
                         </div>
                         <div class="services__content__cards__item col-md-4 col-sm-12 p-4">
-                            <div class="services__content__cards__item__icons" >
+                            <div class="services__content__cards__item__icons">
                                 <i class="bi bi-phone"></i>
-                                <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                <a href="">
+                                    <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                </a>
                             </div>
-                            <h3 class="services__content__cards__item__title">IOS & Android</h3>
-                            <p class="services__content__cards__item__text">We build comprehensive Android and iOS apps that meet your complex business needs.</p>
+                            <h3 class="services__content__cards__item__title text--big">IOS & Android</h3>
+                            <p class="services__content__cards__item__text text">We build comprehensive Android and iOS
+                                apps that meet your complex business needs.</p>
                         </div>
                         <div class="services__content__cards__item col-md-4 col-sm-12 p-4">
-                            <div class="services__content__cards__item__icons" >
+                            <div class="services__content__cards__item__icons">
                                 <i class="bi bi-megaphone"></i>
-                                <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                <a href="">
+                                    <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                </a>
                             </div>
-                            <h3 class="services__content__cards__item__title">Digital Marketing</h3>
-                            <p class="services__content__cards__item__text">Transform your brand with our app development, enterprise CMS, and emerging tech solutions.</p>
+                            <h3 class="services__content__cards__item__title text--big">Digital Marketing</h3>
+                            <p class="services__content__cards__item__text text">Transform your brand with our app
+                                development, enterprise CMS, and emerging tech solutions.</p>
                         </div>
                     </div>
                     <div class="services__content__cards__container row g3">
                         <div class="services__content__cards__item col-md-4 col-sm-12 p-4">
-                            <div class="services__content__cards__item__icons" >
+                            <div class="services__content__cards__item__icons">
                                 <i class="bi bi-search"></i>
-                                <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                <a href="">
+                                    <a href="">
+                                        <i
+                                            class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                    </a>
+                                </a>
                             </div>
-                            <h3 class="services__content__cards__item__title">SEO</h3>
-                            <p class="services__content__cards__item__text">"We offer excellent SEO services using proven strategies to rank your business high on search engines."</p>
+                            <h3 class="services__content__cards__item__title text--big">SEO</h3>
+                            <p class="services__content__cards__item__text text">"We offer excellent SEO services using
+                                proven strategies to rank your business high on search engines."</p>
                         </div>
                         <div class="services__content__cards__item col-md-4 col-sm-12 p-4">
-                            <div class="services__content__cards__item__icons" >
+                            <div class="services__content__cards__item__icons">
                                 <i class="bi bi-bar-chart-fill"></i>
-                                <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                <a href="">
+                                    <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                </a>
                             </div>
-                            <h3 class="services__content__cards__item__title">Enterprise Solution</h3>
-                            <p class="services__content__cards__item__text">We turn your strategies into software systems that optimize your business performance.</p>
+                            <h3 class="services__content__cards__item__title text--big">Enterprise Solution</h3>
+                            <p class="services__content__cards__item__text text">We turn your strategies into software
+                                systems that optimize your business performance.</p>
                         </div>
                         <div class="services__content__cards__item col-md-4 col-sm-12 p-4">
-                            <div class="services__content__cards__item__icons" >
+                            <div class="services__content__cards__item__icons">
                                 <i class="bi bi-gear"></i>
-                                <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                <a href="">
+                                    <i class="bi bi-arrow-up-right services__content__cards__item__icons__arrow"></i>
+                                </a>
                             </div>
-                            <h3 class="services__content__cards__item__title">Maintenance</h3>
-                            <p class="services__content__cards__item__text">"We provide ongoing support to clients beyond project completion with the goal of growing together."</p>
+                            <h3 class="services__content__cards__item__title text--big">Maintenance</h3>
+                            <p class="services__content__cards__item__text text">"We provide ongoing support to clients
+                                beyond project completion with the goal of growing together."</p>
                         </div>
                     </div>
                 </div>
@@ -163,17 +214,36 @@
         <section class="whyus">
             <div class="whyus__content">
                 <div class="whyus__content__container row">
-                    <div class="col-lg-6 col-md-6">
-                        <h2 class="whyus__content__title">Why <span class="whyus__content__title--highlight">Us?</span></h2>
-                        <p class="whyus__content__text">DigiForge is a software development company that specializes in providing our clients with high-quality development services.</p>
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="whyus__content__title title--big">
+                            Why
+                            <span class="whyus__content__title--highlight">
+                                Us?
+                            </span>
+                        </h2>
+                        <p class="whyus__content__text text">DigiForge is a software development company that
+                            specializes in providing our clients with high-quality development services.</p>
                     </div>
-                    <div class="whyus__content__image__left col-md-3">
-                        <img src="./src/images/whyus/projects-delivered.png" alt="">
-                        <img src="./src/images/whyus/hours-worked.png" alt="">
+                    <div class="whyus__content__left col-lg-3 col-md-6">
+                        <div class="whyus__content__item">
+                            <img class="whyus__content__item__image" src="./src/images/whyus/projects-delivered.png"
+                                alt="">
+                            <p class="whyus__content__item__text text--big">Projects Delivered</p>
+                        </div>
+                        <div class="whyus__content__item">
+                            <img class="whyus__content__image" src="./src/images/whyus/hours-worked.png" alt="">
+                            <p class="whyus__content__item__text text--big">Hours Worked</p>
+                        </div>
                     </div>
-                    <div class="whyus__content__image__right col-md-3">
-                        <img src="./src/images/whyus/developers.png" alt="">
-                        <img src="./src/images/whyus/global-footprints.png" alt="">
+                    <div class="whyus__content__right col-lg-3 col-md-3">
+                        <div class="whyus__content__item">
+                            <img class="whyus__content__image" src="./src/images/whyus/developers.png" alt="">
+                            <p class="whyus__content__item__text text--big">Developers</p>
+                        </div>
+                        <div class="whyus__content__item">
+                            <img class="whyus__content__image" src="./src/images/whyus/global-footprints.png" alt="">
+                            <p class="whyus__content__item__text text--big">Global Footprints</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,37 +251,58 @@
 
         <section class="featured">
             <div class="featured__content">
-                <h2 class="featured__content__title">
-                    Featured 
+                <h2 class="featured__content__title title--big">
+                    Featured
                     <span class="featured__content__title--highlight">Work</span>
                 </h2>
-                <p class="featured__content__text">Our team of creative professionals work in a collaborative fashion to craft tangible solutions.</p>
+                <p class="featured__content__text text">Our team of creative professionals work in a collaborative
+                    fashion to craft tangible solutions.</p>
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
-                        <div class="featured__content__item--highlight">
-                            <h3 class="featured__content__item__title">Upguard Investar</h3>
-                            <div class="featured__content__item__text">
-                                <p class="featured__content__item__text__p">Case Study</p>
-                                <span class="featured__content__item__text__decoration"></span>
+                        <nav class="featured__content__tabs">
+                            <div class="featured__content__tabs__item">
+                                <h3 class="featured__content__tabs__item__title title--small featured__content__tabs__item__title--is-active"
+                                    id="upguard-investar">Upguard Investar</h3>
+                                <div class="featured__content__tabs__item__text">
+                                    <button data-tab-button="upguard_investar"
+                                        class="featured__content__tabs__item__text__button featured__content__tabs__item__button--is-active"
+                                        type="button">Case Study</button>
+                                    <span class="featured__content__tabs__item__text__decoration"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="featured__content__item">
-                            <h3 class="featured__content__item__title">Inga Motors</h3>
-                            <div class="featured__content__item__text">
-                                <p class="featured__content__item__text__p">Case Study</p>
-                                <span class="featured__content__item__text__decoration"></span>
+                            <div class="featured__content__tabs__item">
+                                <h3 class="featured__content__tabs__item__title title--small" id="inga-motors">Inga
+                                    Motors</h3>
+                                <div class="featured__content__tabs__item__text">
+                                    <button data-tab-button="inga_motors"
+                                        class="featured__content__tabs__item__text__button" type="button">Case
+                                        Study</button>
+                                    <span class="featured__content__tabs__item__text__decoration"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="featured__content__item">
-                            <h3 class="featured__content__item__title">Onboarding with Sigma</h3>
-                            <div class="featured__content__item__text">
-                                <p class="featured__content__item__text__p">Case Study</p>
-                                <span class="featured__content__item__text__decoration"></span>
+                            <div class="featured__content__tabs__item">
+                                <h3 class="featured__content__tabs__item__title title--small" id="onboarding-sigma">
+                                    Onboarding with Sigma</h3>
+                                <div class="featured__content__tabs__item__text">
+                                    <button data-tab-button="onboarding_sigma"
+                                        class="featured__content__tabs__item__text__button" type="button">Case
+                                        Study</button>
+                                    <span class="featured__content__tabs__item__text__decoration"></span>
+                                </div>
                             </div>
-                        </div>
+                        </nav>
                     </div>
-                    <div class="featured__content__image col-md-8">
-                        <img src="./src/images/featured/featured-work.png" alt="">
+                    <div class="featured__content__item col-md-8">
+                        <div data-tab-id="upguard_investar"
+                            class="featured__content__item__image featured__content__item__image--is-active">
+                            <img src="./src/images/featured/featured-work.png" alt="">
+                        </div>
+                        <div data-tab-id="inga_motors" class="featured__content__item__image">
+                            <img src="./src/images/hero-image.png" alt="">
+                        </div>
+                        <div data-tab-id="onboarding_sigma" class="featured__content__item__image">
+                            <img src="./src/images/hero-background.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,15 +311,20 @@
         <section class="inovate">
             <div class="inovate__content">
                 <div class="row">
-                    <div class="col-md-9 col-sm-12">
+                    <div class="col-lg-9 col-md-8 col-sm-12">
                         <h2 class="inovate__content__title">
-                            Ready to 
+                            Ready to
                             <span class="inovate__content__title--highlight">Inovate</span>
                         </h2>
-                        <p class="inovate__content__text">Contact us to schedule an in-depth discussion about your project to find out how we can fulfil your technical needs!</p>
+                        <p class="inovate__content__text text">Contact us to schedule an in-depth discussion about your
+                            project to find out how we can fulfil your technical needs!</p>
                     </div>
-                    <div class="inovate__content_link col-md-3">
-                        <a class="inovate__content__link__button" href="">Let's Connect <i class="bi bi-arrow-right"></i></a>
+                    <div class="inovate__content__link col-md-4 col-lg-3">
+                        <button class="inovate__content__link__button button" type="button">
+                            <a class="inovate__content__link__button" href="">Let's Connect
+                                <i class="bi bi-arrow-right button__arrow"></i>
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -236,8 +332,9 @@
 
         <section class="customer">
             <div class="customer__content">
-                <h2 class="customer__content__title">Our <span class="customer__content__title--highlight">Customer</span></h2>
-                <p class="customer__content__text">See what our customer say about us</p>
+                <h2 class="customer__content__title title--big">Our <span
+                        class="customer__content__title--highlight">Customer</span></h2>
+                <p class="customer__content__text text">See what our customer say about us</p>
                 <div class="customer__content__images">
                     <img class="customer__content__images__legend" src="./src/images/customers/legend.png" alt="">
                     <img class="customer__content__images__map" src="./src/images/customers/map.png" alt="">
@@ -247,58 +344,61 @@
 
         <section class="contact">
             <div class="contact__content">
-                <div class="row">
-                    <div class="contact__content__newsletter col-lg-4 col-md-4 col-sm-12">
-                        <img class="contact__content__newsletter__logo" src="./src/images/logo.png" alt="">
-                        <p class="contact__content__newsletter__text">We believe in growing together by empowering businesses through technologies and fulfilling their complex software needs by strategic planning and development.</p>
-                        <form class="contact__content__newsletter__form" action="">
-                            <input class="contact__content__newsletter__form__input" type="email" placeholder="Enter your email" name="" id="">
-                            <button class="contact__content__newsletter__form__button" type="submit">Join Newsletter</button>
-                        </form>
-                        <div class="contact__content__newsletter__socials">
-                            <i class="bi bi-facebook"></i>
-                            <i class="bi bi-instagram contact__content__newsletter__socials--middle"></i>
-                            <i class="bi bi-linkedin"></i>
-                        </div>
+                <div class="contact__content__newsletter">
+                    <img class="contact__content__newsletter__logo" src="./src/images/logo.png" alt="">
+                    <p class="contact__content__newsletter__text text">We believe in growing together by empowering
+                        businesses through technologies and fulfilling their complex software needs by strategic
+                        planning and development.</p>
+                    <form class="contact__content__newsletter__form" id="newsletter-form" action="">
+                        <input class="contact__content__newsletter__form__input text--small" type="email"
+                            placeholder="Enter your email" name="" id="newsletter-email">
+                        <button class="contact__content__newsletter__form__button text--small" type="submit">JoinNewsletter</button>
+                    </form>
+                    <p id="newsletter-message"></p>
+                    <div class="contact__content__newsletter__socials">
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram contact__content__newsletter__socials--middle"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
-                    <div class="contact__content__divider--small col-lg-1 col-md-1">
-                        <span class="contact__content__divider__decoration"></span>
-                    </div>
-                    <div class="contact__content__links col-lg-1 col-md-1">
-                            <h3 class="contact__content__links__title">Links</h3>
-                            <div class="contact__content__links__a">
-                                <a href="">Home</a>
-                                <a href="">Technologies</a>
-                                <a href="">Case Studies</a>
-                                <a href="">Clients</a>
-                                <a href="">Portfolio</a>
-                            </div>
-                    </div>
-                    <div class="contact__content__services col-lg-1 col-md-1 col-sm-6">
-                        <h3 class="contact__content__services__title">Services</h3>
-                        <div class="contact__content__services__p">
-                            <p>UI/UX</p>
-                            <p>Web Development</p>
-                            <p>Mobile Application</p>
-                            <p>Digital Marketing</p>
-                            <p>SEO</p>
-                        </div>
-                    </div>
-                    <div class="contact__content__divider--small col-lg-1 col-md-2">
-                        <span class="contact__content__divider__decoration"></span>
-                    </div>
-                    <div class="contact__content__adress col-lg-2 col-md-12">
-                        <h3 class="contact__content__adress__title">Adress</h3>
-                        <div class="contact__content__adress__p">
-                            <p>info@digiforge.com</p>
-                            <p>1560 Pedrick Rd, Tallahassee, Florida</p>
-                            <p>+92 42 322 96908</p>
-                            <p>Milwaukee,</p>
-                            <p>FL West Virginia</p>
-                            <p>10500 W Silver Spring Dr</p>
-                            <p>(414) 466-7800</p>
-                        </div>
-                    </div>
+                </div>
+                <div class="contact__content__divider contact__content__divider--small">
+                    <span class="contact__content__divider__decoration"></span>
+                </div>
+                <div class="contact__content__links">
+                    <h3 class="contact__content__links__title">Links</h3>
+                    <ul class="contact__content__links__items">
+                        <li class="contact__content__links__items__item text--small"><a href="">Home</a></li>
+                        <li class="contact__content__links__items__item text--small"><a href="">Technologies</a></li>
+                        <li class="contact__content__links__items__item text--small"><a href="">Case Studies</a></li>
+                        <li class="contact__content__links__items__item text--small"><a href="">Clients</a></li>
+                        <li class="contact__content__links__items__item text--small"><a href="">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="contact__content__services">
+                    <h3 class="contact__content__services__title">Services</h3>
+                    <ul class="contact__content__services__items">
+                        <li class="contact__content__services__items__item text--small">UI/UX</li>
+                        <li class="contact__content__services__items__item text--small">Web Development</li>
+                        <li class="contact__content__services__items__item text--small">Mobile Application</li>
+                        <li class="contact__content__services__items__item text--small">Digital Marketing</li>
+                        <li class="contact__content__services__items__item text--small">SEO</li>
+                    </ul>
+                </div>
+                <div class="contact__content__divider contact__content__divider--small">
+                    <span class="contact__content__divider__decoration"></span>
+                </div>
+                <div class="contact__content__adress">
+                    <h3 class="contact__content__adress__title">Adress</h3>
+                    <ul class="contact__content__adress__items">
+                        <li class="contact__content__adress__items__item text--small">info@digiforge.com</li>
+                        <li class="contact__content__adress__items__item text--small">1560 Pedrick Rd, Tallahassee,
+                            Florida</li>
+                        <li class="contact__content__adress__items__item text--small">+92 42 322 96908</li>
+                        <li class="contact__content__adress__items__item text--small">Milwaukee,</li>
+                        <li class="contact__content__adress__items__item text--small">FL West Virginia</li>
+                        <li class="contact__content__adress__items__item text--small">10500 W Silver Spring Dr</li>
+                        <li class="contact__content__adress__items__item text--small">(414) 466-7800</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -310,4 +410,5 @@
     </div>
     <script src="./main.js"></script>
 </body>
+
 </html>

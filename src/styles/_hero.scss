@@ -12,6 +12,12 @@
             margin-left: 80px;
             margin-right: 80px;
             position: relative;
+
+            @media (max-width: 768px) {
+                width: calc(100% - 80px);
+                margin-left: 40px;
+                margin-right: 40px;
+            }
         }
 
         &__text{
@@ -21,17 +27,15 @@
                 margin-top: 200px;
             }
 
+            @media(min-width: 768px) and (max-width: 1199px) {
+                margin-top: 400px;
+            }
+
             &__title {
-                font-family: 'Poppins', sans-serif;
-                font-weight: 500;
-                font-size: 36px;
+                font-family: variaveis.$mainFont;
                 color: variaveis.$mainText;
                 text-transform: uppercase;
                 text-align: start;
-
-                @media (max-width: 768px) {
-                    font-size: 24px;
-                }
 
                 &--highlight {
                     font-weight: 600;
@@ -47,30 +51,9 @@
                 max-width: 486px;
                 margin-top: 8px;
                 margin-bottom: 24px;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
+                font-family: variaveis.$mainFont;
                 color: variaveis.$mainText;
                 text-align: start;
-
-                @media (max-width: 768px) {
-                    font-size: 10px;
-                }
-            }
-
-            &__button {
-                display: block;
-                text-align: left;
-                max-width: fit-content;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                font-size: 16px;
-                color: variaveis.$mainText;
-                text-decoration: none;
-                padding: 12px 16px;
-                background-color: transparent;
-                border: variaveis.$mainText solid 2px;
-                border-radius: 4px;
             }
         }
 
@@ -78,24 +61,45 @@
             position: absolute;
             right: -80px;
             bottom: calc(100% - 60vh);
-            width: 566px;
+            // width: 566px;
 
             @media (max-width: 768px) {
+                right: 0;
+                top: 0;
+            }
+
+            @media(min-width: 768px) and (max-width: 1199px) {
                 right: 0;
                 top: 0;
             }
         }
 
         &__icons {
-            position: absolute;
-            bottom: calc(100% - 70vh);
+            margin-top: 60px;
             height: 80px;
-            width: 100%;
             background-color: variaveis.$backgroundHighlight;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 80px;
+            
+            @media (min-width: 768px) and (max-width: 1199px) {
+                display: flex;
+                margin-top: -110px;
+            }
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: auto;
+                padding: 10px 0;
+                margin-top: -100px;
+
+                img {
+                    margin-top: 10px;
+                }
+            }
 
             
             &__item {
@@ -113,6 +117,18 @@
                     height: 48px;
                     background-color: #181818;
                     margin: 0 150px;
+
+                    @media (max-width: 768px) {
+                        &--small {
+                            display: none;
+                        }
+                    }
+
+                    @media (min-width: 768px) and (max-width: 1199px) {
+                        &--small {
+                            display: none;
+                        }
+                    }
                 }
             }
         }

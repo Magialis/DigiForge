@@ -8,11 +8,17 @@
     background-color: #111;
     border-radius: 16px;
 
+    @media (max-width: 768px) {
+        width: calc(100% - 80px);
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
     &__content {
         padding: 32px;
 
         &__title {
-            font-family: 'Poppins', sans-serif;
+            font-family: variaveis.$mainFont;
             font-weight: 700;
             font-size: 48px;
             color: variaveis.$mainText;
@@ -28,15 +34,9 @@
         }
 
         &__text {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
+            font-family: variaveis.$mainFont;
             color: variaveis.$mainText;
             margin-top: 8px;
-            @media (max-width: 768px) {
-                
-                font-size: 14px;
-            }
         }
 
         &__link {
@@ -44,17 +44,8 @@
             justify-content: end;
             align-items: center;
 
-            &__button {
-                display: inline-block;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
+            @media(min-width: 768px) and (max-width: 1199px) {
                 font-size: 16px;
-                color: variaveis.$mainText;
-                text-decoration: none;
-                padding: 12px 16px;
-                background-color: transparent;
-                border: variaveis.$mainText solid 2px;
-                border-radius: 4px;
             }
         }
     }
